@@ -1,0 +1,29 @@
+.navbar-container{
+display: flex;
+justify-content: center;
+background-color: black;
+height: 90px;}
+
+.navbar-title{
+padding-top: 5px;    
+margin-right: 50px;
+color: white;
+font-size: 30px;
+}
+
+.navbar-list{
+list-style-type: none;
+display: flex;
+flex-direction: row;
+margin-right:  300px;
+align-items: center;
+
+}
+
+.list-item{
+font-style: italic;
+padding: 20px;    
+text-decoration: none;
+color: burlywood;
+font-size: larger;
+}

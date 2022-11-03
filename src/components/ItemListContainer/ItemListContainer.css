@@ -1,0 +1,19 @@
+.message-greeting__container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    background-color: rgba(219, 108, 18, 0.596);
+    width: 600px;
+   height: 100px;
+
+
+}
+.message{
+
+    font-family:monospace;
+    font-size:xx-large ;
+
+
+}
