@@ -1,12 +1,35 @@
-import React from 'react'
+import { data } from "../../data/data";
 import "./ItemListContainer.css"
+import { useEffect , useState} from "react";
+import { ItemList } from "../ItemList/ItemList";
+
+
 
 const ItemListContainer = (props) => {
-    console.log(props);
+
+  const [productList, setproductList]= useState([])
+
+  const getProducts= new Promise((resolve , reject)=>{
+setTimeout(()=>{
+resolve(data)
+}, 3000)
+  })
+    useEffect(()=>{
+      getProducts.then(respuesta=>{
+        setproductList(respuesta)
+        
+      })
+      console.log(productList)
+    }, [productList]) 
+
     return(
-    <div className='message-greeting__container'>
-        <h2 className='message'>{props.messagetext}</h2>
+    <>
+    
+    <div>
+      <ItemList productList={productList}/>
     </div>
+
+  </>
   )
 }
 
