@@ -1,15 +1,15 @@
-const Item = (product) => {
-
+const Item = ({product}) => {
+console.log(product)
   return (
     
-    <div>
+    <>
             <div>
         {/* <img/> */}
-        <h2> :C {product.nombre}</h2>
-        <h2>{product.precio}</h2>
-        <h3>{product.plataforma}</h3>
+        <h2>{product.nombre}</h2>
+        <p>{product.precio}</p>
+        <p>{product.plataforma}</p>
             </div>
-    </div>
+    </>
   
      
     
